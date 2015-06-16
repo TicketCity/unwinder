@@ -1,11 +1,11 @@
 {
-  "name": "unwind",
+  "name": "unwinder",
   "version": "1.0.0",
   "description": "Flattens objects",
   "main": "unwind.js",
   "repository" :
   { "type" : "git",
-    "url" : "https://github.com/ctmoses/smalley"
+    "url" : "https://github.com/ctmoses/unwind"
   },
    "keywords": [
     "flatten",
