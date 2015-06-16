@@ -5,7 +5,7 @@
   "main": "unwind.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ctmoses/unwinder"
+    "url": "https://github.com/TicketCity/unwinder"
   },
   "keywords": [
     "flatten",
