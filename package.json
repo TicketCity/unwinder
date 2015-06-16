@@ -1,0 +1,29 @@
+{
+  "name": "unwind",
+  "version": "1.0.0",
+  "description": "Flattens objects",
+  "main": "unwind.js",
+  "repository" :
+  { "type" : "git",
+    "url" : "https://github.com/ctmoses/smalley"
+  },
+   "keywords": [
+    "flatten",
+    "object",
+    "recursion",
+    "recursive"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": {
+    "name": "Chris Moses",
+    "email": "cmoses@ticketcity.com",
+    "url": "http://ticketcity.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
+  }
+}
