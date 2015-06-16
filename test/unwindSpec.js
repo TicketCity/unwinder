@@ -3,7 +3,7 @@ var unwind	= require('../unwind');
 
 describe('#Unwind tests', function() {
 	it('Should keep a 1-deep object flat', function(done) {
-		unwind.flatten({"first": "data"}, function(response) {
+		unwind.flatten({"first": "data"}, function(err, response) {
 			should.deepEqual(response, {"first": "data"});
 			Object.keys(response).length.should.equal(1);
 			done();
@@ -11,7 +11,7 @@ describe('#Unwind tests', function() {
 	});
 	
 	it('Should unwind a 3-deep object and create three keys', function(done) {
-		unwind.flatten({"first": {"second": {"third": "moreData"}}}, function(response) {
+		unwind.flatten({"first": {"second": {"third": "moreData"}}}, function(err, response) {
 			should.deepEqual(response, goodResponse);
 			Object.keys(response).length.should.equal(3);
 			done();
@@ -19,7 +19,7 @@ describe('#Unwind tests', function() {
 	});
 	
 	it('Should unwind a 5-deep object and create five keys', function(done) {
-		unwind.flatten(bigObj, function(response) {
+		unwind.flatten(bigObj, function(err, response) {
 			should.deepEqual(response, bigReponse);
 			Object.keys(response).length.should.equal(5);
 			done();

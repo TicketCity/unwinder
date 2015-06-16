@@ -32,8 +32,11 @@
 	var unwind   = require('unwind'),
 		yourObj  = {"first": {"second": "data"}}
 	
-	unwind.flatten(yourObj, function(results) {
-		console.log(results);
+	unwind.flatten(yourObj, function(err, results) {
+		if(err)
+			//handle your error...	
+		else
+			//do something awesome with the results...
 	}); 
 ```
 
