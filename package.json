@@ -1,13 +1,13 @@
 {
   "name": "unwinder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flattens objects",
   "main": "unwind.js",
-  "repository" :
-  { "type" : "git",
-    "url" : "https://github.com/ctmoses/unwinder"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctmoses/unwinder"
   },
-   "keywords": [
+  "keywords": [
     "flatten",
     "object",
     "recursion",
